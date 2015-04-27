@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+<style>
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div id="game">
+	<canvas id="myCanvas" width="700" height="500" style="border:0px solid #000000;">
+	Your browser does not support the HTML5 canvas tag.
+	</canvas>
+	<script src="script.js"></script>
+	<script>
+	/*$(document).ready(function(){
+		$("#game").hide();
+		$("#startlearn").click(function(){
+			$("#start").hide();
+			$("#game").fadeIn(1000);
+		});
+		$("#endlearn").click(function(){
+			$("#game").hide();
+			$("#start").fadeIn(1000);
+		});
+	});*/
+	</script>
+	<ul style='float: left; list-style: none;' >
+		<li><button onclick="previousLevel()">poprzedni</button>
+		<li><button onclick="nextLevel()">nastepny</button>
+		<li><button onclick="moreInfo()">informacja</button>
+		<li><button onclick="refresh()">reset</button>
+		<li><button id='endlearn'>zakoncz</button>
+	</ul>
+	<div id="test4"></div>
+
+</div>
+<div id='start'>
+	<button id='startlearn'>Rozpocznij nauke</button>
+	<button id='starttest'>Rozwiaz test</button>
+	
+</div>
+</body>
+</html>
