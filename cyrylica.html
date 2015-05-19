@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height:650px; width: 920px">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF8">
 <style>
@@ -7,15 +7,29 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 </head>
-<body>
+<body style="height:100%">
 
 <div id="game">
-	<canvas id="myCanvas" width="700" height="500" style="border:0px solid #000000;">
-	Your browser does not support the HTML5 canvas tag.
-	</canvas>
+    <div>
+		<div style="position: relative;">
+		<canvas id="myCanvas" width="1209" height="746" style="border:0px solid #000000; background:url('oldtv.jpg');">
+		Your browser does not support the HTML5 canvas tag.
+		</canvas>
+		<div id="test4"></div>
+		</div>
+		<div style="position: relative; padding-left:50px; padding-top: 50px;">
+			<ul style='float: left; list-style: none;' >
+				<li><button id='previous' onclick="previousLevel()"></button>
+				<li><button id='next' onclick="nextLevel()"></button>
+				<li><button id='refresh' onclick="refresh()"></button>
+				<li><button id='endlearn'></button>
+			</ul>
+		</div>
+	</div>
+
 	<script src="script.js"></script>
 	<script>
-	/*$(document).ready(function(){
+	$(document).ready(function(){
 		$("#game").hide();
 		$("#startlearn").click(function(){
 			$("#start").hide();
@@ -25,21 +39,13 @@
 			$("#game").hide();
 			$("#start").fadeIn(1000);
 		});
-	});*/
+	});
 	</script>
-	<ul style='float: left; list-style: none;' >
-		<li><button onclick="previousLevel()">poprzedni</button>
-		<li><button onclick="nextLevel()">nastepny</button>
-		<li><button onclick="moreInfo()">informacja</button>
-		<li><button onclick="refresh()">reset</button>
-		<li><button id='endlearn'>zakoncz</button>
-	</ul>
-	<div id="test4"></div>
-
+</div>
 </div>
 <div id='start'>
 	<button id='startlearn'>Rozpocznij nauke</button>
-	<button id='starttest'>Rozwiaz test</button>
+	<button id='starttest' onclick="alert('test');">Rozwiaz test</button>
 	
 </div>
 </body>
